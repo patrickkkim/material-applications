@@ -21,4 +21,4 @@ jobs:
       with:
         push: true
         context: ./express-app/
-        tags: devopsdockeruh/coursepage:latest
+        tags: patrickkkim/repository:latest
