@@ -3,9 +3,6 @@ name: Node.js/Express Release with Docker
 on:
   push:
     branches: [ "main" ]
-    paths:
-     - 'express-app/**'
-     - '.github/workflows/express-app-image.yml'
 
 jobs:
   publish-dockerhub:
@@ -23,4 +20,5 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
+        context: ./express-app/
         tags: devopsdockeruh/coursepage:latest
